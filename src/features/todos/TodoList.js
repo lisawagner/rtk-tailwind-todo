@@ -4,7 +4,7 @@ import { Button } from "../../components"
 
 const TodoList = () => {
   const todos = useSelector(store => store.todos)
-  console.log(todos);
+  // console.log(todos);
 
   const renderCard = () => todos.map(todo => (
     <div

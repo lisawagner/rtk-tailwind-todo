@@ -1,8 +1,14 @@
 import { useState } from "react"
 import { useNavigate } from 'react-router-dom'
+import { useDispatch } from "react-redux"
+import { nanoid } from "@reduxjs/toolkit"
+// features
+import { addTodo } from "./todoSlice"
+// components
 import { Button, TextField } from "../../components"
 
 const AddTodo = () => {
+  const dispatch = useDispatch()
   const navigate = useNavigate()
   const [values, setValues] = useState({
     title: '',
@@ -14,6 +20,11 @@ const AddTodo = () => {
   const handleAddTodo = () => {
     setValues({ title: '', details: ''})
     console.log(values);
+    dispatch(addTodo({
+      id: nanoid(6),
+      title: values.title,
+      details: values.details
+    }))
     navigate('/')
   }
 
