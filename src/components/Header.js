@@ -2,7 +2,7 @@ const Header = () => {
   return (
     <header>
       <div className="px-4 lg:px-6 py-5 bg-gray-800 shadow-xl">
-        <div class="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl">
+        <div className="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl">
           <div className="flex items-center gap-x-1 xxs:gap-x-3">
             <div className="h-6 sm:h-9 flex items-center">
               <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="white" className="w-6 h-6">
