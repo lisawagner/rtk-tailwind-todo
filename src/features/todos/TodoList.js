@@ -10,7 +10,10 @@ const TodoList = () => {
   ]
 
   const renderCard = () => todos.map(todo => (
-    <div className="bg-gray-200 p-5 flex items-center justify-between shadow-xl ring-1 ring-gray-900/5 ">
+    <div
+      className="bg-gray-200 p-5 flex items-center justify-between shadow-xl ring-1 ring-gray-900/5 "
+      key={todo.id}
+    >
       <div>
         <h3 className="font-bold text-lg text-gray-700">{todo.title}</h3>
         <span className="font-normal text-gray-600">{todo.details}</span>
