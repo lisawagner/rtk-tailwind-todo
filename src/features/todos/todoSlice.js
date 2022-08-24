@@ -15,9 +15,18 @@ const todoSlice = createSlice({
       // Shows the action type and payload
       console.log(action);
       state.push(action.payload)
+    },
+    editTodo: (state, action) => {
+      // grab the id, title & details from the action payload 
+      const { id, title, details } = action.payload
+      const existingTodo = state.find(todo => todo.id === id)
+      if(existingTodo) {
+        existingTodo.title = title
+        existingTodo.details = details
+      }
     }
   }
 })
 
-export const { addTodo } = todoSlice.actions
+export const { addTodo, editTodo } = todoSlice.actions
 export default todoSlice.reducer

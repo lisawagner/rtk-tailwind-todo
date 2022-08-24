@@ -1,17 +1,30 @@
 import { useState } from "react"
-import { useNavigate } from 'react-router-dom'
+import { useSelector, useDispatch } from 'react-redux'
+import { useNavigate, useParams } from 'react-router-dom'
+import { editTodo } from "./todoSlice"
+// components
 import { Button, TextField } from "../../components"
 
 const EditTodo = () => {
+  const params = useParams()
+  const dispatch = useDispatch()
+  const todos = useSelector(store => store.todos)
   const navigate = useNavigate()
+  const existingTodo = todos.filter(todo => todo.id === params.id)
+  const { title, details } = existingTodo[0]
   const [values, setValues] = useState({
-    title: '',
-    details: ''
+    title,
+    details
   })
 
   const handleEditTodo = () => {
     setValues({ title: '', details: ''})
-    console.log(values);
+    // console.log(values);
+    dispatch(editTodo({
+      id: params.id,
+      title: values.title,
+      details: values.details
+    }))
     navigate('/')
   }
   return (
