@@ -3,9 +3,7 @@ import { Routes, Route } from 'react-router-dom'
 // features
 import { TodoList, AddTodo } from './features/todos';
 // components
-import Layout from './components/Layout';
-
-
+import { Layout } from './components';
 
 function App() {
   return (
@@ -16,7 +14,6 @@ function App() {
         <Route path="add-todo" element={<AddTodo />}/>
       </Route>
     </Routes>
-
   );
 }
 
