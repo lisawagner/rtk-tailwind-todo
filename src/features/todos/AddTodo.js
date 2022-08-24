@@ -9,6 +9,8 @@ const AddTodo = () => {
     details: ''
   })
 
+  // TODO: Extract handlers to a helper file
+
   const handleAddTodo = () => {
     setValues({ title: '', details: ''})
     console.log(values);
