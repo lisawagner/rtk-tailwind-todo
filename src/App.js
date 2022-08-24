@@ -1,8 +1,10 @@
 import React from 'react';
 import { Routes, Route } from 'react-router-dom'
-import TodoList from './features/todos/TodoList';
+// features
+import { TodoList, AddTodo } from './features/todos';
+// components
 import Layout from './components/Layout';
-import AddTodo from './features/todos/AddTodo';
+
 
 
 function App() {
