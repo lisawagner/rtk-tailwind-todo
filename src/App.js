@@ -1,15 +1,17 @@
 import React from 'react';
+import { Routes, Route } from 'react-router-dom'
 import TodoList from './features/todos/TodoList';
-import Header from './components/Header';
+import Layout from './components/Layout';
+
 
 function App() {
   return (
-    <>
-      <Header />
-      <div className="container mx-auto px-2 max-w-5xl pt-10 md:pt-12 md:px-5">
-        <TodoList />
-      </div>
-    </>
+    <Routes>
+      <Route path="/" element={<Layout />}>
+        {/* TodoList component acting as homepage here */}
+        <Route index element={<TodoList />} />
+      </Route>
+    </Routes>
 
   );
 }
