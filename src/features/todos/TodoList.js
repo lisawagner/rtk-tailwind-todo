@@ -1,13 +1,10 @@
+import { useSelector } from 'react-redux'
 import { Link } from 'react-router-dom'
 import { Button } from "../../components"
 
 const TodoList = () => {
-  const todos = [
-    { id: '1', title: 'Task 1', details: 'This is the first task to do.'},
-    { id: '2', title: 'Task 2', details: 'Listen to music'},
-    { id: '3', title: 'Task 3', details: 'Remember to eat.'},
-    { id: '4', title: 'Task 4', details: 'You need a shower'},
-  ]
+  const todos = useSelector(store => store.todos)
+  console.log(todos);
 
   const renderCard = () => todos.map(todo => (
     <div
