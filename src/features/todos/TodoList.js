@@ -1,5 +1,5 @@
+import { Link } from 'react-router-dom'
 import { Button } from "../../components"
-
 
 const TodoList = () => {
   const todos = [
@@ -37,7 +37,10 @@ const TodoList = () => {
     <>
       <div className="flex flex-wrap flex-col xxs:flex-row justify-between text-center items-center mx-auto max-w-screen-xl mb-4">
         <h1 className='font-bold text-2xl text-gray-700 '>CRUD TodoList with Redux Toolkit</h1>
-        <Button>Add Todo</Button>
+        <Link to='/add-todo'>
+          <Button>Add Todo</Button>
+        </Link>
+        
       </div>
       <div className="grid gap-5 md:grid-cols-2">
         {todos.length ? renderCard() : <p className="text-center col-span-2 text-gray-700 font-semibold">No Todos</p>}
