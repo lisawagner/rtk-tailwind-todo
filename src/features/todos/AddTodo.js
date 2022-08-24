@@ -15,6 +15,7 @@ const AddTodo = () => {
     navigate('/')
   }
 
+  // TODO: make form reusable here and in EditTodos
 
   return (
     <div className="mt-10 max-w-xl mx-auto">
@@ -30,7 +31,7 @@ const AddTodo = () => {
         onChange={(e) => setValues({ ...values, details: e.target.value})}
         inputProps={{ type: 'text', placeholder: 'Todo item details...'}}
       />
-      <Button onClick={handleAddTodo}>Submit</Button>
+      <Button onClick={handleAddTodo}>Create</Button>
     </div>
   )
 }
