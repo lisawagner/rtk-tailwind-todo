@@ -5,7 +5,7 @@ import { nanoid } from "@reduxjs/toolkit"
 // features
 import { addTodo } from "./todoSlice"
 // components
-import { Button, TextField } from "../../components"
+import { Button, TextField, FormContainer } from "../../components"
 
 const AddTodo = () => {
   const dispatch = useDispatch()
@@ -14,8 +14,6 @@ const AddTodo = () => {
     title: '',
     details: ''
   })
-
-  // TODO: Extract handlers to a helper file
 
   const handleAddTodo = () => {
     setValues({ title: '', details: ''})
@@ -28,10 +26,8 @@ const AddTodo = () => {
     navigate('/')
   }
 
-  // TODO: make form reusable here and in EditTodos
-
   return (
-    <div className="mt-10 max-w-xl mx-auto">
+    <FormContainer title="Add Todo">
       <TextField
         label="Todo"
         value={values.title}
@@ -45,7 +41,7 @@ const AddTodo = () => {
         inputProps={{ type: 'text', placeholder: 'Todo item details...'}}
       />
       <Button onClick={handleAddTodo}>Create</Button>
-    </div>
+    </FormContainer>
   )
 }
 export default AddTodo
