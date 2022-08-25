@@ -23,7 +23,7 @@ Tutorial
 Layouts with React Router 6
    - [React Router v6 Shared layouts](https://stackoverflow.com/questions/70236929/react-router-v6-shared-layouts)
    - [React Router Example](https://stackblitz.com/github/remix-run/react-router/tree/main/examples/basic?file=src%2FApp.tsx)
-   
+
 Use of Index Files
    - [How do index.js files work in React component directories?](https://stackoverflow.com/questions/44092341/how-do-index-js-files-work-in-react-component-directories)
 
@@ -31,18 +31,19 @@ Use of Index Files
 ## Notes
 
 ### Nanoid
-Nanoid is now part of React Toolkit, so you do not have to add a separate package, unless your project requires a different universal identifyer.
+Nanoid is now part of React Toolkit, so you do not have to add a separate package unless your project requires a different universal identifyer.
 
 ### React File Structure
 React File Structure
-   -[File Structure from Reactjs](https://reactjs.org/docs/faq-structure.html)
-   -[Delightful React File/Directory Structure](https://www.joshwcomeau.com/react/file-structure/)
+   - [File Structure from Reactjs](https://reactjs.org/docs/faq-structure.html)
+   - [Delightful React File/Directory Structure](https://www.joshwcomeau.com/react/file-structure/)
 
 Redux / Redux Toolkit currently recommends structuring files as Feature folders with all files for a feature in the same folder:
-   - [](https://redux.js.org/style-guide/#structure-files-as-feature-folders-with-single-file-logic)
+
+   - [Redux Style Guide](https://redux.js.org/style-guide/#structure-files-as-feature-folders-with-single-file-logic)
 
 ### Use of Index Files in Folders
-As your React project grows, index files can really help clean up your file imports, making your code easier to read. This is especially useful for larger projects with Redux multiple slice reducers.
+As your React project grows, index files can really help clean up your file imports, making your code easier to read. This is especially useful for larger projects with multiple Redux slice reducers.
 
 Instead of:
 ```
