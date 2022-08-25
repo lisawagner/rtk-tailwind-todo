@@ -6,7 +6,7 @@ import { editTodo } from "./todoSlice"
 import { Button, TextField } from "../../components"
 import DefaultForm from "../../containers/DefaultForm"
 
-// need to create a formValuesSlice
+// need to create a formValuesSlice with getInitialVal, setNewVal
 
 const EditTodo = () => {
   const params = useParams()
