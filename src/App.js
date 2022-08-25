@@ -1,9 +1,8 @@
-import React from 'react';
 import { Routes, Route } from 'react-router-dom'
 // features
-import { TodoList, AddTodo, EditTodo } from './features/todos';
+import { TodoList, AddTodo, EditTodo } from './features/todos'
 // components
-import { Layout, NotFound } from './components';
+import { Layout, NotFound } from './components'
 
 function App() {
   return (
@@ -19,4 +18,4 @@ function App() {
   );
 }
 
-export default App;
+export default App
