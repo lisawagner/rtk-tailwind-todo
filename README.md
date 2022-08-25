@@ -21,7 +21,7 @@ Todoodles is a CRUD todo app created as a `Redux Toolkit` study. Users can creat
 5. React Router 6 | [React Router](https://reactrouter.com/en/v6.3.0/getting-started/overview)
 
 
-## :owl: Learning Resources :books:
+## :owl: Learning Resources
 
 Tutorial
    - [CRUD Operations with React and Redux Toolkit](https://www.youtube.com/watch?v=SgnlgEEkqSo) by Cand Dev
