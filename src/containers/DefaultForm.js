@@ -29,7 +29,7 @@ const DefaultForm = ({
           <TextField
             label={item.label}
             key={item.order}
-            value={inputValues[item.order] || ""}
+            value={inputValues[item.order] || item.value}
             onChange={onChange(item.order)}
             // placeholder={item.label}
             inputProps={{ type: item.type, placeholder: item.placeholder}}
