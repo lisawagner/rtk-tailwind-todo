@@ -1,4 +1,4 @@
-# Todoodles | A React Redux Todo App
+# :rocket: Todoodles | A React Redux Todo App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app), using the [Redux](https://redux.js.org/) and [Redux Toolkit](https://redux-toolkit.js.org/) template.
 
@@ -10,7 +10,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 Todoodles is a CRUD todo app created as a `Redux Toolkit` study. Users can create, read, update and edit entries via Redux state management.
 
-[DEMO](https://redux-toolkit-example-blog.netlify.app/ "RTK Tailwind Todo Demo")
+[DEMO](https://todoodles-redux-toolkit-tailwind-app.netlify.app/ "RTK Tailwind Todo Demo")
 
 ### :gear: Tech Stack
 
@@ -21,7 +21,7 @@ Todoodles is a CRUD todo app created as a `Redux Toolkit` study. Users can creat
 5. React Router 6 | [React Router](https://reactrouter.com/en/v6.3.0/getting-started/overview)
 
 
-## Learning Resources
+## :owl: Learning Resources :books:
 
 Tutorial
    - [CRUD Operations with React and Redux Toolkit](https://www.youtube.com/watch?v=SgnlgEEkqSo) by Cand Dev
@@ -34,7 +34,7 @@ Use of Index Files
    - [How do index.js files work in React component directories?](https://stackoverflow.com/questions/44092341/how-do-index-js-files-work-in-react-component-directories)
 
 
-## Notes
+## :memo: Notes
 
 ### Nanoid
 Nanoid is now part of React Toolkit, so you do not have to add a separate package unless your project requires a different universal identifyer.
