@@ -4,6 +4,7 @@ import { useNavigate, useParams } from 'react-router-dom'
 import { editTodo } from "./todoSlice"
 // components
 import { Button, TextField } from "../../components"
+import DefaultForm from "../../containers/DefaultForm"
 
 const EditTodo = () => {
   const params = useParams()
@@ -27,8 +28,13 @@ const EditTodo = () => {
     }))
     navigate('/')
   }
+
+  const handleSignup = () => {
+    console.log('YOU CLICKED ME!!');
+  }
   
   return (
+    <>
     <div className="mt-10 max-w-xl mx-auto">
       <TextField
         label="Todo"
@@ -44,6 +50,16 @@ const EditTodo = () => {
       />
       <Button onClick={handleEditTodo}>Update</Button>
     </div>
+    <DefaultForm
+      headerText="Edit Todo!"
+      inputItems={[
+        { order: 1, label: "Todo", type: "text", placeholder: "Todo Item Title", value: {values}},
+        { order: 2, label: "Details", type: "text", placeholder: "Todo item details...", value: {values}},
+      ]}
+      buttonText="Update"
+      onClick={handleSignup}
+    />
+    </>
   )
 }
 export default EditTodo
