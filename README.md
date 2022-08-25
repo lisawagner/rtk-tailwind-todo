@@ -19,12 +19,14 @@ Todoodles is a CRUD todo app created as a `Redux Toolkit` study. Users can creat
 
 Tutorial
    - [CRUD Operations with React and Redux Toolkit](https://www.youtube.com/watch?v=SgnlgEEkqSo) by Cand Dev
+
 Layouts with React Router 6
    - [React Router v6 Shared layouts](https://stackoverflow.com/questions/70236929/react-router-v6-shared-layouts)
    - [React Router Example](https://stackblitz.com/github/remix-run/react-router/tree/main/examples/basic?file=src%2FApp.tsx)
+   
 Use of Index Files
    - [How do index.js files work in React component directories?](https://stackoverflow.com/questions/44092341/how-do-index-js-files-work-in-react-component-directories)
-   
+
 
 ## Notes
 
