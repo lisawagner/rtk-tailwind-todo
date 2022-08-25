@@ -61,7 +61,7 @@ import AddTodo from "./features/todos/AddTodo";
 import EditTodo from "./features/todos/EditTodo";
 import TodoList from "./features/todos/TodoList";
 import Layout from './components/Layout
-import NotFound from './components/NotFounf
+import NotFound from './components/NotFound
 
 function App() {
   return (
