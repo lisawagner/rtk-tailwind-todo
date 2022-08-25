@@ -14,8 +14,8 @@ Todoodles is a CRUD todo app created as a `Redux Toolkit` study. Users can creat
 
 ### Technology
 
-1. Reactjs 18 | [Create React App](https://github.com/facebook/create-react-app)
-2. Redux Toolkit | [Redux Toolkit](https://redux-toolkit.js.org/)
+1. Reactjs 18
+2. Redux Toolkit | [Getting Started](https://redux-toolkit.js.org/introduction/getting-started)
 3. React Router 6 | [React Router](https://reactrouter.com/en/v6.3.0/getting-started/overview)
 4. TailwindCSS | [TailwindCSS](https://tailwindcss.com/docs/installation)
 5. Redux DevTools for Chrome | [Dev Tools](https://chrome.google.com/webstore/detail/redux-devtools/lmhkpmbekcpmknklioeibfkpmmfibljd?hl=en)
