@@ -1,46 +1,94 @@
-# Getting Started with Create React App and Redux
+# Todoodles | A React Redux Todo App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app), using the [Redux](https://redux.js.org/) and [Redux Toolkit](https://redux-toolkit.js.org/) template.
 
-## Available Scripts
+## Description
 
-In the project directory, you can run:
+Todoodles is a CRUD todo app created as a `Redux Toolkit` study. Users can create, read, update and edit entries via Redux state management.
 
-### `npm start`
+### :gear: Tech Stack
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+1. Reactjs 18 | [Create React App](https://github.com/facebook/create-react-app)
+2. Redux Toolkit | [Redux Toolkit](https://redux-toolkit.js.org/)
+3. TailwindCSS | [TailwindCSS](https://tailwindcss.com/docs/installation)
+4. Redux DevTools for Chrome | [Dev Tools](https://chrome.google.com/webstore/detail/redux-devtools/lmhkpmbekcpmknklioeibfkpmmfibljd?hl=en)
+5. React Router 6 | [React Router](https://reactrouter.com/en/v6.3.0/getting-started/overview)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
 
-### `npm test`
+## Learning Resources
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Tutorial
+   - [CRUD Operations with React and Redux Toolkit](https://www.youtube.com/watch?v=SgnlgEEkqSo) by Cand Dev
+Layouts with React Router 6
+   - [React Router v6 Shared layouts](https://stackoverflow.com/questions/70236929/react-router-v6-shared-layouts)
+   - [React Router Example](https://stackblitz.com/github/remix-run/react-router/tree/main/examples/basic?file=src%2FApp.tsx)
+Use of Index Files
+   - [How do index.js files work in React component directories?](https://stackoverflow.com/questions/44092341/how-do-index-js-files-work-in-react-component-directories)
+   
 
-### `npm run build`
+## Notes
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Nanoid
+Nanoid is now part of React Toolkit, so you do not have to add a separate package, unless your project requires a different universal identifyer.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### React File Structure
+React File Structure
+   -[File Structure from Reactjs](https://reactjs.org/docs/faq-structure.html)
+   -[Delightful React File/Directory Structure](https://www.joshwcomeau.com/react/file-structure/)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Redux / Redux Toolkit currently recommends structuring files as Feature folders with all files for a feature in the same folder:
+   - [](https://redux.js.org/style-guide/#structure-files-as-feature-folders-with-single-file-logic)
 
-### `npm run eject`
+### Use of Index Files in Folders
+As your React project grows, index files can really help clean up your file imports, making your code easier to read. This is especially useful for larger projects with Redux multiple slice reducers.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Instead of:
+```
+app.js
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+import { Routes, Route } from 'react-router-dom'
+import AddTodo from "./features/todos/AddTodo";
+import EditTodo from "./features/todos/EditTodo";
+import TodoList from "./features/todos/TodoList";
+import Layout from './components/Layout
+import NotFound from './components/NotFounf
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+function App() {
+  return (
+    <Routes>
+      <Route path="/" element={<Layout />}>
+        <Route index element={<TodoList />} />
+        <Route path="add-todo" element={<AddTodo />}/>
+        <Route path="edit-todo/:id" element={<EditTodo />}/>
+        <Route path="*" element={<NotFound />}/>
+      </Route>
+    </Routes>
+  );
+}
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+export default App
 
-## Learn More
+```
+In projects with multiple slice reducers, the imports list would grow exponentially and cause the code to be hard to read. Use cleaner imports:
+```
+app.js
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+import { Routes, Route } from 'react-router-dom'
+import { TodoList, AddTodo, EditTodo } from './features/todos'
+import { Layout, NotFound } from './components'
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+function App() {
+  return (
+    <Routes>
+      <Route path="/" element={<Layout />}>
+        <Route index element={<TodoList />} />
+        <Route path="add-todo" element={<AddTodo />}/>
+        <Route path="edit-todo/:id" element={<EditTodo />}/>
+        <Route path="*" element={<NotFound />}/>
+      </Route>
+    </Routes>
+  );
+}
+
+export default App
+```
