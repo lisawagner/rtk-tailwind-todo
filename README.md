@@ -12,16 +12,17 @@ Todoodles is a CRUD todo app created as a `Redux Toolkit` study. Users can creat
 
 [DEMO](https://todoodles-redux-toolkit-tailwind-app.netlify.app/ "RTK Tailwind Todo Demo")
 
-### :gear: Tech Stack
+### Technology
 
 1. Reactjs 18 | [Create React App](https://github.com/facebook/create-react-app)
 2. Redux Toolkit | [Redux Toolkit](https://redux-toolkit.js.org/)
-3. TailwindCSS | [TailwindCSS](https://tailwindcss.com/docs/installation)
-4. Redux DevTools for Chrome | [Dev Tools](https://chrome.google.com/webstore/detail/redux-devtools/lmhkpmbekcpmknklioeibfkpmmfibljd?hl=en)
-5. React Router 6 | [React Router](https://reactrouter.com/en/v6.3.0/getting-started/overview)
+3. React Router 6 | [React Router](https://reactrouter.com/en/v6.3.0/getting-started/overview)
+4. TailwindCSS | [TailwindCSS](https://tailwindcss.com/docs/installation)
+5. Redux DevTools for Chrome | [Dev Tools](https://chrome.google.com/webstore/detail/redux-devtools/lmhkpmbekcpmknklioeibfkpmmfibljd?hl=en)
 
 
-## :owl: Learning Resources
+
+## :books: Learning Resources
 
 Tutorial
    - [CRUD Operations with React and Redux Toolkit](https://www.youtube.com/watch?v=SgnlgEEkqSo) by Cand Dev
