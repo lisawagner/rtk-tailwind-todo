@@ -41,13 +41,13 @@ Use of Index Files
 Nanoid is now part of React Toolkit, so you do not have to add a separate package unless your project requires a different universal identifyer.
 
 ### 2. React File Structure
-React File Structure
-   - [File Structure from Reactjs](https://reactjs.org/docs/faq-structure.html)
-   - [Delightful React File/Directory Structure](https://www.joshwcomeau.com/react/file-structure/)
-
 Redux / Redux Toolkit currently recommends structuring files as Feature folders with all files for a feature in the same folder:
 
    - [Redux Style Guide](https://redux.js.org/style-guide/#structure-files-as-feature-folders-with-single-file-logic)
+
+React File Structure
+   - [File Structure from Reactjs](https://reactjs.org/docs/faq-structure.html)
+   - [Delightful React File/Directory Structure](https://www.joshwcomeau.com/react/file-structure/)
 
 ### 3. Use of Index Files in Folders
 As your React project grows, index files can really help clean up your file imports, making your code easier to read. This is especially useful for larger projects with multiple Redux slice reducers.
