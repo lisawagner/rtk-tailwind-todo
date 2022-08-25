@@ -21,7 +21,7 @@ const AddTodo = () => {
     setValues({ title: '', details: ''})
     console.log(values);
     dispatch(addTodo({
-      id: nanoid(6),
+      id: nanoid(8),
       title: values.title,
       details: values.details
     }))
