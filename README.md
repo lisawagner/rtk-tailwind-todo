@@ -2,9 +2,15 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app), using the [Redux](https://redux.js.org/) and [Redux Toolkit](https://redux-toolkit.js.org/) template.
 
+<p align="center">
+  <img src="src/assets/rtk-todoodles.png" alt="Redux Toolkit with TailwindCSS Todo App" width="500">
+</p>
+
 ## Description
 
 Todoodles is a CRUD todo app created as a `Redux Toolkit` study. Users can create, read, update and edit entries via Redux state management.
+
+[DEMO](https://redux-toolkit-example-blog.netlify.app/ "RTK Tailwind Todo Demo")
 
 ### :gear: Tech Stack
 
