@@ -4,6 +4,7 @@ import { useNavigate, useParams } from 'react-router-dom'
 import { editTodo } from "./todoSlice"
 // components
 import { Button, TextField, FormContainer } from "../../components"
+import TestComponent from "../../components/TestComponent"
 
 const EditTodo = () => {
   const params = useParams()
@@ -30,6 +31,7 @@ const EditTodo = () => {
   
   return (
     <FormContainer title="Edit Todo">
+      <TestComponent currentTodo={existingTodo[0]}/>
       <TextField
         label="Todo"
         value={values.title}
