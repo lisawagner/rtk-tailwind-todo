@@ -18,6 +18,7 @@ const EditTodo = () => {
     details
   })
 
+  console.log("Existing", existingTodo);
   const handleEditTodo = () => {
     setValues({ title: '', details: ''})
     // console.log(values);
