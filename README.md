@@ -156,5 +156,5 @@ export { Button, Header, Layout, TextField, NotFound, FormContainer }
 [github-url]: https://github.com/lisawagner/rtk-tailwind-todo
 [github-commit]: https://img.shields.io/github/last-commit/lisawagner/rtk-tailwind-todo?logo=github&style=flat-square
 
-[netlify-img]: https://img.shields.io/netlify/8f53362b-5385-445d-bff8-fbf44086fa13?color=%2300C7B7&style=flat-square
+[netlify-img]: https://img.shields.io/netlify/8f53362b-5385-445d-bff8-fbf44086fa13?style=flat-square
 [netlify-url]: https://todoodles-redux-toolkit-tailwind-app.netlify.app/
