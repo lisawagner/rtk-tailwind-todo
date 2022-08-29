@@ -1,14 +1,19 @@
 # :rocket: Todoodles | A React Redux Todo App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app), using the [Redux](https://redux.js.org/) and [Redux Toolkit](https://redux-toolkit.js.org/) template.
+> Todoodles is a CRUD todo app created as a `Redux Toolkit` study.
+
+[![GitHub repo size][github-img]][github-url]
+[![GitHub last commit][github-commit]][github-url]
+
+<!-- Badges to Add: Netlify build, twitter, license? -->
 
 <p align="center">
   <img src="src/assets/rtk-todoodles.png" alt="Redux Toolkit with TailwindCSS Todo App" width="500">
 </p>
 
-## Description
+## Features
 
-Todoodles is a CRUD todo app created as a `Redux Toolkit` study. Users can create, read, update and edit entries via Redux state management.
+Users can create, read, update and edit entries via Redux state management.
 
 [DEMO](https://todoodles-redux-toolkit-tailwind-app.netlify.app/ "RTK Tailwind Todo Demo")
 
@@ -21,6 +26,20 @@ Todoodles is a CRUD todo app created as a `Redux Toolkit` study. Users can creat
 5. Redux DevTools for Chrome | [Dev Tools](https://chrome.google.com/webstore/detail/redux-devtools/lmhkpmbekcpmknklioeibfkpmmfibljd?hl=en)
 
 
+## Getting Started
+
+These instructions will give you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on deploying the project on a live system.
+
+### Development setup
+
+Download and extract the Zip file or clone this repo your system.
+
+After downloading/cloning this repo, go to its root directory and run:
+
+```
+$ npm i
+$ npm start
+```
 
 ## :books: Learning Resources
 
@@ -116,3 +135,8 @@ import FormContainer from "./FormContainer";
 export { Button, Header, Layout, TextField, NotFound, FormContainer }
 
 ```
+
+<!-- Markdown link & img dfn's -->
+[github-img]: https://img.shields.io/github/repo-size/lisawagner/rtk-tailwind-todo?logo=github&style=flat-square
+[github-url]: https://github.com/lisawagner/rtk-tailwind-todo
+[github-commit]: https://img.shields.io/github/last-commit/lisawagner/rtk-tailwind-todo?logo=github&style=flat-square
