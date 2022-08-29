@@ -41,6 +41,20 @@ $ npm i
 $ npm start
 ```
 
+### Deployment
+
+This project is hosted on Netlify. To deploy your own copy, you will need to set up a Netlify account. Netlify offers a generous free tier to developers.
+
+Before deploying to Netlify you need to create a build:
+
+```
+$ npm run build
+```
+
+It is a good idea to test your build by serving it on your localhost. Once you are happy with your build, open up your Netlify Account.
+
+For a basic deploy, you can simply drag and drop the build folder onto your Netlify Sites directory. See [Get started with Netlify](https://docs.netlify.com/get-started/) for details.
+
 ## :books: Learning Resources
 
 Tutorial
