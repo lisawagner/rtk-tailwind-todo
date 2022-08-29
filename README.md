@@ -2,8 +2,8 @@
 
 > Todoodles is a CRUD todo app created as a `Redux Toolkit` study.
 
-[![GitHub repo size][github-img]][github-url]
 [![Netlify][netlify-img]][netlify-url]
+[![GitHub repo size][github-img]][github-url]
 [![GitHub last commit][github-commit]][github-url]
 
 
